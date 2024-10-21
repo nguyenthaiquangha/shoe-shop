@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import {getProductByAction} from '../../redux/slide/listProducts'
-import { ProductDetail } from '../productDetail/productDetail';
+import {ProductDetail} from '../ProductDetail/ProductDetail'
 export   const Detail = () => {
     const param = useParams();
     const dispatch = useDispatch();
