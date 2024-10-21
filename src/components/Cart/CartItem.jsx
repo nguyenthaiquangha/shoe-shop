@@ -4,8 +4,6 @@ import { useDispatch } from 'react-redux';
 
 export const CartItem = (props) => {
     const { productId, quantity, image, name, price } = props.data;
-
-
     const dipatch = useDispatch();
     const handleMinusQuantity = () => {
         dipatch(changQuanTity({
