@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addComment, deleteComment } from '../../redux/slide/comment';
 import { useNavigate } from 'react-router-dom';
 
-export const Comment = (props) => {
+export const Comment = () => {
     const [comment, setComment] = useState('');
     const user = JSON.parse(localStorage.getItem('user'));
     const listComment = useSelector((state) => state.commentSlice.comment);
