@@ -3,7 +3,7 @@ import './cart.scss'
 import { Header } from '../Header/Header'
 import {  useSelector } from 'react-redux'
 
-import { CartItem } from './cartItem'
+import { CartItem } from './../Cart/CartItem'
 export const Cart = () => {
     const cart = useSelector(state => state.cartSlice.item);
     return (
